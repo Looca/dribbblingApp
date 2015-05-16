@@ -1,0 +1,20 @@
+<div class="shot row">
+	<div class="col-xs-12 col-md-6">
+		<a class="thumbnail" href="#/shots/{{shot.id}}"><img ng-src="{{shot.image_url}}" alt="{{shot.title}}"></a>
+	</div>
+	<div class="col-xs-12 col-md-6">
+		<h1>{{shot.title}}</h1>
+		<img ng-src="{{shot.player.avatar_url}}" width="50" class="pull-left" alt="{{shot.player.name}}"><p>by <a href="#/players/{{shot.player.username}}">{{shot.player.name}}</a> <br />
+		date: {{shot.created_at | dribbbleDate:"mm dd, yyyy"}}</p>
+		<hr>
+		<ul class="shot-stats">
+			<li>{{shot.comments_count}} comments</li>
+			<li>{{shot.views_count}} views</li>
+			<li>{{shot.likes_count}} likes</li>
+			<li>{{shot.rebounds_count}} rebounds</li>	
+			<li><a href="{{shot.url}}">{{shot.url}}</a></li>
+		</ul>
+	</div>
+</div>
+
+

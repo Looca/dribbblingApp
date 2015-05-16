@@ -1,0 +1,11 @@
+<div class="row">
+	<ul class="col-xs-12">
+		<li class="shot col-xs-6 col-sm-4 col-md-2" ng-repeat="shot in list.shots">
+				<a class="thumbnail" href="#/shots/{{shot.id}}">
+					<img ng-src="{{shot.image_teaser_url}}" alt="{{shot.title}}">
+				</a>
+		</li>
+	</ul>
+<div class="col-xs-12">
+	<button class="btn btn-primary btn-block" ng-click="loadNextPage()">Load more</button>
+</div>

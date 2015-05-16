@@ -1,0 +1,17 @@
+<div class="player">
+	<div class="col-xs-6 col-sm-4">
+		<h1>{{player.name}}</h1>
+		<ul class="list-unstyled">
+			<li>{{player.location}}</li>
+			<li>{{player.shots_count}} shots</li>
+			<li ng-if="player.twitter_screen_name">
+				<a href="//twitter.com/{{player.twitter_screen_name}}"> @{{player.twitter_screen_name}}</a>
+			</li>
+			<li><a href="{{player.url}}">{{player.url}}</a></li>
+		</ul>
+	</div>
+	<div class="col-xs-6 col-sm-4">
+		<img class="pull-right" ng-src="{{player.avatar_url}}" alt="{{player.name}}">
+	</div>
+
+</div>
